@@ -22,26 +22,13 @@ wp_head();
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+			<a href="http://localhost/wordpress-5.4.2/" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
 		</header>
 
 		<!-- Menu -->
-		<!-- <nav id="menu">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="landing.html">Landing</a></li>
-                <li><a href="generic.html">Generic</a></li>
-                <li><a href="elements.html">Elements</a></li>
-            </ul>
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Get Started</a></li>
-                <li><a href="#" class="button fit">Log In</a></li>
-            </ul>
-        </nav>
- -->
 		<nav id="menu">
 			<?php
 			wp_nav_menu(
