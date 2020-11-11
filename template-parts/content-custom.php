@@ -12,6 +12,7 @@
 <?php
 //grab the custom field here and display it
 $custom_group = get_field('fortysections');
+$banner_content = $custom_group['banner_content'];
 $sec1_title = $custom_group['section1-title'];
 $sec1_content = $custom_group['section1-desc'];
 $sec3_title = $custom_group['section3-title'];
@@ -29,9 +30,23 @@ $sec3_link = $custom_group['section3-link'];
         <!-- Wrapper -->
         <div id="wrapper">
             <?php
-            the_content();
+            //the_content();
             ?>
-
+            <!-- Banner -->
+            <!-- Note: The "styleN" class below should match that of the header element. -->
+            <section id="banner" class="style2">
+                <div class="inner">
+                    <span class="image">
+                        <img src="images/pic07.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h1><?php the_title();?></h1>
+                    </header>
+                    <div class="content">
+                        <p><?php echo $banner_content;?></p>
+                    </div>
+                </div>
+            </section>
             <!-- Main -->
             <div id="main">
                 <!-- One -->
@@ -66,7 +81,7 @@ $sec3_link = $custom_group['section3-link'];
                                 <div class="content">
                                     <div class="inner">
                                         <header class="major">
-                                            <h3><?php echo $sec2title;?></h3>
+                                            <h3><?php echo $sec2title; ?></h3>
                                         </header>
                                         <p><?php echo $sec2desc; ?></p>
                                         <ul class="actions">

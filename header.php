@@ -34,9 +34,11 @@ wp_head();
 			wp_nav_menu(
 				array(
 					'menu' => 'menu-1',
-					'container' => '',
 					'theme_location' => 'menu-1',
+					'container' => '',
 					'items_wrap' => '<ul class="links" id="">%3$s</ul>'
+					/* 'container' => 'ul',
+					'menu_class' => 'links' */
 				)
 			)
 			?>
