@@ -3443,3 +3443,8 @@ body.is-menu-visible #menu .inner {
 	opacity: 1;
 	visibility: visible;
 }
+
+/* disable title */ 
+.entry-title {
+	display: none;
+ }
