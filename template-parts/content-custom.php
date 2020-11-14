@@ -37,7 +37,7 @@ $sec3_link = $custom_group['section3-link'];
             <section id="banner" class="style2">
                 <div class="inner">
                     <span class="image">
-                        <img src="images/pic07.jpg" alt="" />
+                        <img src="" alt="" />
                     </span>
                     <header class="major">
                         <h1><?php the_title();?></h1>
